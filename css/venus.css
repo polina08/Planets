@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+body{background:url("../img/venus-p.jpg")left no-repeat fixed;color:white;}
+* {
+ padding:0;
+ margin:0;
+ box-sizing:border-box;
+}
+header{height:100px;display:flex;justify-content:center;align-items:center;font-size:1.5rem;}
+ h1 {font-family:'Raleway',sans-serif;color:red;text-shadow:1px 1px orange;}
+
+section{width:80%;margin:auto;background-color:rgba(0,0,0,.4);text-align:center;}
+ .box{width:90%; margin:auto;}
+ .sub{padding:5px 5px;font-size:1.5rem;font-family:'Open Sans', sans-serif;}
+ p{text-align:justify;font-family: 'Open Sans', sans-serif;font-size:14px}
+
+nav{display:flex;justify-content:space-around;margin:auto;position:relative;bottom:-40px;}
+nav a{text-decoration:none;color:red;text-shadow:1px 1px orange;font-size:20px;}
+
+@media only screen and (min-width:768px) {
+    
+*{
+ padding:0;
+ margin:0;
+ box-sizing:border-box;
+}
+html,body{height:100%;}
+body{background-position:center;background-color:black;}
+ header{height:20%;border:solid red;}
+ section{height:60%;display:flex;flex-direction:row;border:solid green;background-color:rgba(0,0,0,0.6);}   
+  .box{width:28%;height:90%;background-color:rgba(0,0,0,0);border:solid yellow;
+display:flex;flex-wrap:wrap;align-items:center;justify-content:center;}
+  .sub{font-size:16px;height:10%;width:50%;}
+  footer{height:20%;border:solid red;display:flex;align-items:center;justify-content:flex-end;}
+    nav{border:dotted white;width:50%;}
+    nav a{width:7%;}
+    
+}

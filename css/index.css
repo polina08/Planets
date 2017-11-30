@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+/*Raleway for titles and Open sans for body text*/
+html, body {height:100%;}
+*{
+    box-sizing: border-box; margin:0; padding:0;
+}
+h1
+{
+    border:solid red;color:rgb(250,250,250);
+    font-family:'Raleway',sans-serif;
+}
+
+body {
+    height:100%;
+    background:url("../img/earth.1.png") no-repeat fixed bottom left , url("../img/starrysky.jpg");
+    background-size:100%;
+}
+header {
+    display:flex; flex-direction:row;
+    font-family:'Raleway',sans-serif;
+}
+
+
+#intro{
+    height:25%; width:250px;color:rgb(250,250,250); font-family:'Open Sans', sans-serif;
+    margin:0; padding:0; position:fixed; bottom:55%;
+}
+#mercury{
+    height:90px;width:90px;
+    background-image:url("../img/Mercury.png"); background-size:100%; 
+    border-radius:50%;
+    position:relative;left:30%; box-sizing:border-box; margin:0; padding:0;
+    background-repeat:no-repeat;
+}
+#mars{
+    height:90px;width:90px;
+    background-image:url("../img/mars-p.png");background-size:100%; 
+    background-repeat:no-repeat; border-radius:50%;
+    position:relative;left:45%; box-sizing: border-box; margin:0; padding:0;
+    
+}
+#venus{
+    height:90px;width:90px;
+    background-image:url("../img/venus-p.png"); 
+    background-size:100%; background-repeat:no-repeat; border-radius:50%;
+    position:relative;left:60%; box-sizing: border-box; margin:0; padding:0;
+    
+}
+#saturn{
+    height:90px;width:90px;background-image:url("../img/Saturn.png"); 
+    background-size:100%; background-repeat:no-repeat; border-radius:50%;
+    background-position:center;
+    position:relative;left:74%; box-sizing: border-box; margin:0; padding:0;
+    
+}
+#jupiter{
+    height:90px;width:90px;
+    background-image:url("../img/Jupiter.png"); background-size:100%;
+    background-repeat:no-repeat;border-radius:50%;
+    position:relative;left:87%; box-sizing:border-box; margin:0; padding:0;
+    
+}
+
+
+/*For the large screen devices*/
+@media only screen and (min-width: 768px){
+html, body {height:100%;}
+* {margin:0; padding:0; box-sizing: border-box;}
+
+h1 {
+    border:solid red;color:rgb(250,250,250);
+    font-family:'Raleway',sans-serif;
+}
+p{
+    width:100%;
+    font-family:'Open Sans', sans-serif;
+}
+body {
+    background:url("../img/earth.1.png") no-repeat bottom left, url("../img/starrysky.jpg") no-repeat;
+    background-size: 300px, cover;
+}
+header {height:5%;}
+section {height:90%;}
+aside {height:5%; width:25%; position:absolute; top:60%; left:25%;} 
+
+#intro {
+    position:relative; top:47.5%; left:100%; border:none;
+    font-family:'Open Sans',sans-serif;
+}
+#jupiter
+{
+    height:12%;border-radius:50%;
+    position:relative;left:90%;background-size:100%;
+}
+#saturn
+{
+    height:15%; width:100px;border-radius:50%; background-repeat:no-repeat;
+    position:relative;left:79%; background-size:100%, cover;
+}
+#uranus
+{
+    height:12%;width:80px;border-radius:50%;
+    position:relative;left:68%; background:url("../img/Uranus.png") no-repeat;
+    background-size: 100%, cover;
+}
+#neptune
+{
+    height:12%;width:80px;border-radius:50%;
+    position:relative;left:56%;
+    background:url("../img/Neptune.png") no-repeat; background-size: 100%, cover;
+}
+#venus
+{
+    height:12%;width:80px;border-radius:50%;
+    position:relative;left:44%;
+}
+#mars
+{
+    height:12%;width:80px;border-radius:50%;
+    position:relative;left:34%; background-size:100%,cover;
+}
+#mercury
+{
+    height:12%;width:80px;border-radius:50%;
+    position:relative;left:22%;
+    
+}
+}
